@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>遊戲規則</title>
+    <style>
+        body {
+            min-width:80vw ;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(144, 223, 236);
+        }
+        
+        table {
+            border: 3px black solid;
+            text-align: center;
+        }
+        
+        tr,
+        th {
+            border: 1px black solid;
+            width: 100px;
+        }
+        
+        span {
+            color: red;
+            background-color: yellow;
+        }
+        
+        tbody tr:nth-child(even) {
+            background: rgb(230, 228, 228);
+        }
+        
+        thead tr {
+            background: rgb(195, 168, 221);
+        }
+        
+        .bb {
+            font-weight: bold;
+        }
+        .cen{
+            background-color: white;
+        position: absolute;
+        left:25%;
+        right: 25%;
+        
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cen">
+        <div style="text-align: center;">
+            <h1><span>遊戲規則</span></h1>
+        </div>
+        <div>
+            <h3 class="bb">一.遊戲設置</h3>
+            <ol>
+                <li>
+                    <h5 class="bb">選角色</h5>
+                </li>
+                <p>每位玩家分發二張角色牌，每位玩家挑選其中一張作為自己的角色，當所有玩家都挑選好角色後，潛伏的角色牌要面朝下蓋伏，其他角色面朝上亮出。剩餘的角色牌都面朝下堆疊在一旁。</p>
+                <li>
+                    <h5 class="bb">抽陣營</h5>
+                </li>
+                <p>在挑選角色之後，拿取等同於玩家人數的身份牌（參照下表）隨機分給每位玩家一張身份牌，所有玩家的身份牌都是保密的（面朝下放置）。</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>人數</th>
+                            <th style="color: red;">潛伏</th>
+                            <th style="color: blue;">軍情</th>
+                            <th style="color: green;">醬油</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>3</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>1</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>1</th>
+                            <th>1</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>0</th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>1</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>0</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>2</th>
+                            <th>2</th>
+                            <th>3</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>1</th>
+                        </tr>
+                        <tr>
+                            <th>8</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>2</th>
+                        </tr>
+                        <tr>
+                            <th>9</th>
+                            <th>3</th>
+                            <th>3</th>
+                            <th>3</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <li>
+                    <h5 class="bb">起始手牌</h5>
+                </li>
+                <p>將遊戲牌洗勻後，分給每位玩家三張牌為起始手牌。之後將剩餘的遊戲牌放在中央，作為牌庫。</p>
+            </ol>
+        </div>
+        <div>
+            <h3 class="bb">二.遊戲進行</h3>
+            <ol>
+                <li class="bb">回合開始階段</li>
+                <p>通常可以直接跳過，除非有角色技能在此階段使用。</p>
+            </ol>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+
+</html>
