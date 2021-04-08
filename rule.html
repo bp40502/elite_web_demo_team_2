@@ -9,7 +9,7 @@
     <title>遊戲規則</title>
     <style>
         body {
-            min-width:80vw ;
+            min-width: 80vw;
             display: flex;
             flex-direction: column;
             background-color: rgb(144, 223, 236);
@@ -26,11 +26,6 @@
             width: 100px;
         }
         
-        span {
-            color: red;
-            background-color: yellow;
-        }
-        
         tbody tr:nth-child(even) {
             background: rgb(230, 228, 228);
         }
@@ -42,13 +37,12 @@
         .bb {
             font-weight: bold;
         }
-        .cen{
-            background-color: white;
-        position: absolute;
-        left:25%;
-        right: 25%;
         
-
+        .cen {
+            background-color: white;
+            position: absolute;
+            left: 25%;
+            right: 25%;
         }
     </style>
 </head>
@@ -56,7 +50,7 @@
 <body>
     <div class="cen">
         <div style="text-align: center;">
-            <h1><span>遊戲規則</span></h1>
+            <h1><span style="color: red;background: yellow;">遊戲規則</span></h1>
         </div>
         <div>
             <h3 class="bb">一.遊戲設置</h3>
@@ -143,10 +137,48 @@
             </ol>
         </div>
         <div>
-            <h3 class="bb">二.遊戲進行</h3>
+            <h3 class="bb">二.開始遊戲</h3>
             <ol>
                 <li class="bb">回合開始階段</li>
                 <p>通常可以直接跳過，除非有角色技能在此階段使用。</p>
+                <li class="bb">抽牌階段 </li>
+                <p>從牌庫頂抽二張牌。當牌庫的牌抽完時，馬上把棄牌堆洗混後形成新的牌庫。</p>
+                <li class="bb">出牌階段</li>
+                <p>可以使用任意張牌，每回合必須且只能傳出一張情報</p>
+                <li class="bb">情報傳遞階段</li>
+                <div>
+                    <ol style="list-style-type: lower-alpha;">
+                        <li>傳遞中</li>
+                        <p>情報在兩個玩家之間，此時可使用【調虎離山】【截獲】【鎖定】。</p>
+                        <li>情報抵達</li>
+                        <p>情報在玩家面前，此時可使用【破譯】【轉移】；不可使用【調虎離山】【截獲】【鎖定】。</p>
+                        <li>情報接收</li>
+                        <p>決定是否接收。此時不能使用任何卡牌和人物技能。</p>
+                    </ol>
+                </div>
+                <li class="bb">出牌階段</li>
+                <p>同上，但不可再傳遞情報</p>
+                <li class="bb">回合結束階段</li>
+                <p>通常可以直接跳過，除非有角色技能在此階段使用。</p>
+            </ol>
+        </div>
+        <div>
+            <h3 class="bb">三.結束遊戲</h3>
+            <ol style="list-style-type: none;">
+                <p>只要有一方陣營達成勝利條件，遊戲立即結束，該陣營獲勝</p>
+                <p><span style="color: red;">潛伏：</span>一位隊友搜集到3張<span style="color: red;">紅色</span>情報。</p>
+                <p><span style="color: blue;">軍情：</span>一位隊友搜集到3張<span style="color: blue;">藍色</span>情報。</p>
+                <p><span style="color: green;">醬油：</span>完成自己角色卡上的機密任務。</p>
+                <p><span style="color: red;">*醬油方各自為不同陣營</span></p>
+            </ol>
+        </div>
+        <div>
+            <h3 class="bb">四.死亡 & 輸掉遊戲</h3>
+            <ol style="list-style-type: disc;">
+                <li><p>當玩家無法在自己回合中傳出情報，就會輸掉遊戲，輸掉遊戲不會發動角色死亡時觸發的效果。</p></li>
+                <li><p>若自己回合再傳出情報前已滿足死亡或勝利條件時則視為死亡或勝利並不視為輸掉遊戲。</p></li>
+                <li><p>當獲得三張或以上的假情報時，視為死亡。某些角色死亡時會觸發效果。</p></li>
+                <li><p>在同時滿足死亡及勝利的條件下，死亡優先於勝利，某些角色技能除外</p></li>
             </ol>
         </div>
     </div>
