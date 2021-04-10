@@ -6,26 +6,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>風聲</title>
+
+    <style type="text/css">
+        body {
+            /* background-color: rgb(58, 197, 104); */
+            background-image: url(image/background.png);
+            background-position: top;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            font-family: DFKai-sb;
+        }
+        
+        header {
+            display: flex;
+            justify-content: center;
+        }
+        
+        header h1 {
+            border: double rgb(238, 98, 98);
+            border-radius: 20px;
+            border-width: 15px;
+            margin: 20px;
+            padding: 10px;
+            font-size: 3rem;
+            width: 70vw;
+            max-width: 750px;
+            text-align: center;
+        }
+        
+        #main {
+            background-color: white;
+            height: 600px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+        
+        aside {
+            line-height: 50px;
+            font-size: 2rem;
+            width: 200px;
+            margin-right: 20px;
+        }
+        
+        aside ul {
+            list-style-type: none;
+        }
+        
+        aside a:link {
+            color: black;
+            text-decoration: none;
+            /* 設定還沒瀏覽過的連結樣式 */
+        }
+        
+        aside a:visited {
+            color: black;
+            /* 設定已經瀏覽過的連結樣式 */
+        }
+        
+        aside a:hover {
+            color: red;
+            /* 設定滑鼠移到連結上的樣式 */
+        }
+        
+        aside a:active {
+            color: blue;
+            /* 設定正在被點選的連結樣式 */
+        }
+        
+        #content {
+            flex-direction: column;
+            /* flex-grow: 4; */
+            justify-content: space-between;
+            height: 600px;
+            width: 750px;
+        }
+        
+        #photo_block {
+            /* background-color: yellow; */
+            height: 350px;
+        }
+        
+        #another_table_game {
+            height: 250px;
+            text-align: center;
+        }
+
+        #another_table_game>p{
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        
+        #another_table_game>div {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .table_game {
+            text-align: center;
+            margin: 20px 10px;
+            background-color: rgb(203, 169, 248);
+            border-radius: 30px;
+        }
+        
+        #another_table_game img {
+            width: 200px;
+            height: 130px;
+            border-radius: 30px;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <title>
-
-    </title>
+    <header>
+        <h1>風聲</h1>
+    </header>
     <div id="main">
         <aside>
+            <ul>
+                <li>故事背景</li>
+                <li><a href="rule.html">規則介紹</a></li>
+                <li><a href="character.html">角色介紹</a></li>
+                <li><a href="card.html">卡片介紹</a></li>
+                <li><a href="special.html">特殊玩法</a></li>
+            </ul>
 
         </aside>
-        <div>
+        <div id="content">
             <div id="photo_block">
 
             </div>
             <div id="another_table_game">
-
+                <p>其他同類型桌遊</p>
+                <div>
+                    <div class="table_game">
+                        <p>三國殺</p>
+                        <a href="#"><img src="image/三國殺.jpg"></a>
+                    </div>
+                    <div class="table_game">
+                        <p>盜夢都市</p>
+                        <a href="#"><img src="image/盜夢都市.jpg"></a>
+                    </div>
+                    <div class="table_game">
+                        <p>BANG！砰</p>
+                        <a href="#"><img src="image/BANG.jpg"></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
+    </div>
 </body>
 
 </html>
