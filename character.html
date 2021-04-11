@@ -13,19 +13,28 @@
         body {
             display: flex;
             margin: 0px;
+            flex-direction: row;
+            justify-content: center;
+            background-image: url("image/background.png");
         }
         
         #role_bar {
             display: block;
             width: 200px;
             overflow: auto;
-            height: 80vh;
+            height: 100vh;
             background-color: coral;
             text-align: center;
         }
         
         #role_detail {
+            height: 100vh;
+            width: 400px;
             background-color: cornflowerblue;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            margin-left: 20px;
         }
         
         #search {
@@ -44,6 +53,21 @@
         #role_bar button {
             margin: 0px;
         }
+        
+        #pho {
+            width: 350px;
+            height: 460px;
+        }
+        
+        table {
+            border: 3px black solid;
+            text-align: left;
+        }
+        
+        table tr,
+        td {
+            border: 1px black solid;
+        }
     </style>
 
 </head>
@@ -51,12 +75,13 @@
 <body>
     <!-- 角色縮圖 -->
     <div>
-        <div id="search">
+        <!-- <div id="search">
             <span>角色搜尋</span>
             <input type="text" value="">
             <button>搜尋</button>
-        </div>
+        </div> -->
         <div id="role_bar">
+            <p style="margin: 5px;"><span style="color: red; background-color: white; font-size: 2rem;">角色列表</span></p>
             <input type="image" src="image\Character\Character_1.png" alt="" onclick="image(1)" ;>
             <input type="image" src="image\Character\Character_2.png" alt="" onclick="image(2)" ;/>
             <input type="image" src="image\Character\Character_3.png" alt="" onclick="image(3)" ; />
@@ -87,13 +112,28 @@
     </div>
     <!-- 詳細說明 -->
     <div id="role_detail">
+        <p><img src="image\Character\Character_1.png" alt="" id="pho" height="700px"></p>
         <div>
-            <p><img src="#" alt="" id="123"></p>
+            <table>
+                <tr>
+                    <td>座右銘</td>
+                    <td>他是這盤棋的桌子，而我總是皇后</td>
+                </tr>
+                <tr>
+                    <td>機密任務</td>
+                    <td>無</td>
+                </tr>
+                <tr>
+                    <td>技能</td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
     </div>
+
     <script type="text/javascript">
         function image(img) {
-            document.getElementById('123').src = "image/Character/Character_" + img + ".png"
+            document.getElementById('pho').src = "image/Character/Character_" + img + ".png"
         }
         image(img);
     </script>
