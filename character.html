@@ -57,45 +57,45 @@
             <button>搜尋</button>
         </div>
         <div id="role_bar">
-            <input type="image" src="https://gamewith-tw.akamaized.net/img/fa2fe4bba3242c0908a8e10a88ceaae5.jpg" alt="" onclick="image(this)";>
-            <input type="image" src="image\Character\Character_2.png" alt=""/>
-            <input type="image" src="image\Character\Character_3.png" alt=""/>
-            <input type="image" src="image\Character\Character_4.png" alt=""/>
-            <input type="image" src="image\Character\Character_5.png" alt=""/>
-            <input type="image" src="image\Character\Character_6.png" alt=""/>
-            <input type="image" src="image\Character\Character_7.png" alt=""/>
-            <input type="image" src="image\Character\Character_8.png" alt=""/>
-            <input type="image" src="image\Character\Character_9.png" alt=""/>
-            <input type="image" src="image\Character\Character_10.png" alt=""/>
-            <input type="image" src="image\Character\Character_11.png" alt=""/>
-            <input type="image" src="image\Character\Character_12.png" alt=""/>
-            <input type="image" src="image\Character\Character_13.png" alt=""/>
-            <input type="image" src="image\Character\Character_14.png" alt=""/>
-            <input type="image" src="image\Character\Character_15.png" alt=""/>
-            <input type="image" src="image\Character\Character_16.png" alt=""/>
-            <input type="image" src="image\Character\Character_17.png" alt=""/>
-            <input type="image" src="image\Character\Character_18.png" alt=""/>
-            <input type="image" src="image\Character\Character_19.png" alt=""/>
-            <input type="image" src="image\Character\Character_20.png" alt=""/>
-            <input type="image" src="image\Character\Character_21.png" alt=""/>
-            <input type="image" src="image\Character\Character_22.png" alt=""/>
-            <input type="image" src="image\Character\Character_23.png" alt=""/>
-            <input type="image" src="image\Character\Character_24.png" alt=""/>
-            <input type="image" src="image\Character\Character_25.png" alt=""/>
+            <input type="image" src="image\Character\Character_1.png" alt="" onclick="image(1)" ;>
+            <input type="image" src="image\Character\Character_2.png" alt="" onclick="image(2)" ;/>
+            <input type="image" src="image\Character\Character_3.png" alt="" onclick="image(3)" ; />
+            <input type="image" src="image\Character\Character_4.png" alt="" onclick="image(4)" ;/>
+            <input type="image" src="image\Character\Character_5.png" alt="" onclick="image(5)" ;/>
+            <input type="image" src="image\Character\Character_6.png" alt="" onclick="image(6)" ;/>
+            <input type="image" src="image\Character\Character_7.png" alt="" onclick="image(7)" ;/>
+            <input type="image" src="image\Character\Character_8.png" alt="" onclick="image(8)" ;/>
+            <input type="image" src="image\Character\Character_9.png" alt="" onclick="image(9)" ;/>
+            <input type="image" src="image\Character\Character_10.png" alt="" onclick="image(10)" ; />
+            <input type="image" src="image\Character\Character_11.png" alt="" onclick="image(14)" ;/>
+            <input type="image" src="image\Character\Character_12.png" alt="" onclick="image(15)" ; />
+            <input type="image" src="image\Character\Character_13.png" alt="" onclick="image(16)" ;/>
+            <input type="image" src="image\Character\Character_14.png" alt="" onclick="image(14)" ;/>
+            <input type="image" src="image\Character\Character_15.png" alt="" onclick="image(15)" ;/>
+            <input type="image" src="image\Character\Character_16.png" alt="" onclick="image(16)" ; />
+            <input type="image" src="image\Character\Character_17.png" alt="" onclick="image(17)" ;/>
+            <input type="image" src="image\Character\Character_18.png" alt="" onclick="image(19)" ;/>
+            <input type="image" src="image\Character\Character_19.png" alt="" onclick="image(19)" ;/>
+            <input type="image" src="image\Character\Character_20.png" alt="" onclick="image(20)" ;/>
+            <input type="image" src="image\Character\Character_21.png" alt="" onclick="image(21)" ;/>
+            <input type="image" src="image\Character\Character_22.png" alt="" onclick="image(22)" ; />
+            <input type="image" src="image\Character\Character_23.png" alt="" onclick="image(23)" ;/>
+            <input type="image" src="image\Character\Character_24.png" alt="" onclick="image(24)" ; />
+            <input type="image" src="image\Character\Character_25.png" alt="" onclick="image(25)" ;/>
         </div>
 
     </div>
     <!-- 詳細說明 -->
     <div id="role_detail">
-        <div id="123">
-            <p ><img src="image\Character\Character_2.png" alt=""></p>
+        <div>
+            <p><img src="#" alt="" id="123"></p>
         </div>
     </div>
     <script type="text/javascript">
         function image(img) {
-            var cc = img.src
-            document.getElementById('123').innerHTML ="<img src='cc' />";
-        } image(img);
+            document.getElementById('123').src = "image/Character/Character_" + img + ".png"
+        }
+        image(img);
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
