@@ -22,6 +22,11 @@
             right: 25%;
         }
         
+        .group p,
+        .information ul {
+            font-size: 1.25rem;
+        }
+        
         .group img {
             width: 120px;
         }
@@ -29,11 +34,31 @@
         .Features img {
             width: 140px;
         }
-        table{
-            border: 3px black solid;
+        
+        .feature_card {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-around */
+            margin-bottom: 10px;
         }
-        tr,td{
-            border: 1px black solid;
+        
+        .card_introduce {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            margin: 0px 20px;
+            font-size: 1.25rem;
+        }
+        
+        .card_introduce p:nth-child(1) {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        
+        h3 {
+            font-size: 2rem;
         }
     </style>
 </head>
@@ -44,7 +69,7 @@
             <h1><span style="color: red;background: yellow;">卡片介紹</span></h1>
         </div>
         <div class='group'>
-            <h3>一.陣營</h3>
+            <h3>一. 陣營</h3>
             <div style="margin-left:40px;">
                 <img src="image\Group\Red.png" alt="">
                 <img src="image\Group\Blue.png" alt="">
@@ -53,11 +78,11 @@
             </div>
         </div>
         <div class='role'>
-            <h3>二.角色卡</h3>
+            <h3>二. 角色卡</h3>
             <img style="width: 48vw;" src="image\Character_Introduce.png" alt="">
         </div>
         <div class="information">
-            <h3>三.情報</h3>
+            <h3>三. 情報</h3>
             <ul>
                 <li>傳遞方式</li>
                 <p>有三種傳遞方式，分別為【密電】【直達】【文本】</p>
@@ -69,136 +94,120 @@
 
         </div>
         <div class="Features">
-            <h3>四.功能牌</h3>
+            <h3>四. 功能牌</h3>
             <div style="margin-left:40px;">
-                <table>
-                    <tr>
-                        <td>
-                            <p>鎖定</p>
-                            <img src="image\Card\Lock.png" alt="">
-                        </td>
-                        
-                    
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>調虎離山</p>
-                            <img src="image\Card\Do_Not_Receive.png" alt="">
-                        </td>
-                        <td>
+                <div class="feature_card">
+                    <img src="image\Card\Lock.png" alt="">
+                    <div class="card_introduce">
+                        <p>鎖定</p>
+                        <p>123</p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>截獲</p>
-                            <img src="image\Card\Get_Passing_Information.png" alt="">
-                        </td>
-                        <td>
+                    <img src="image\Card\Do_Not_Receive.png" alt="">
+                    <div class="card_introduce">
+                        <p>調虎離山</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>調包</p>
-                            <img src="image\Card\Change_Information.png" alt="">
-                        </td>
-                        <td>
+                    <img src="image\Card\Get_Passing_Information.png" alt="">
+                    <div class="card_introduce">
+                        <p>截獲</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>轉移</p>
-                            <img src="image\Card\Transfer_Information.png" alt="">
-                        </td>
-                        <td>
+                    <img src="image\Card\Change_Information.png" alt="">
+                    <div class="card_introduce">
+                        <p>調包</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>破譯</p>
-                            <img src="image\Card\Decrypt.png" alt="">
-                        </td>
-                        <td>
+                    <img src="image\Card\Transfer_Information.png" alt="">
+                    <div class="card_introduce">
+                        <p>轉移</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>識破</p>
-                            <img src="image\Card\Cancel_Card.png" alt="">
-                        </td>
-                        <td>
+                    <img src="image\Card\Decrypt.png" alt="">
+                    <div class="card_introduce">
+                        <p>破譯</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>公開文檔</p>
-                            <img src="image\Card\Pubpc_Information.png" alt="">
-                        </td>
-                        <td>
+                    <img src="image\Card\Cancel_Card.png" alt="">
+                    <div class="card_introduce">
+                        <p>識破</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>燒毀</p>
-                            <img src="image\Card\Fire_Black.png" alt="">
-                        </td>
-                        <td>
+                    <img src="image/Card/Public_Information.png" alt="">
+                    <div class="card_introduce">
+                        <p>公開文檔</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>試探</p>
-                            <img src="image\Card\Who_Are_You.png" alt="">
-                        </td>
-                        <td>
+                    <img src="image\Card\Fire_Black.png" alt="">
+                    <div class="card_introduce">
+                        <p>燒毀</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>增援</p>
-                            <img src="image\Card\Draw_Card.png" alt="">
-                        </td>
-                        <td>
+                    <img src="image\Card\Who_Are_You.png" alt="">
+                    <div class="card_introduce">
+                        <p>試探</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>權衡</p>
-                            <img src="image\Card\Change_All_Card.png" alt="">
-                        </td>
-                        <td>
+                    <img src="image\Card\Draw_Card.png" alt="">
+                    <div class="card_introduce">
+                        <p>增援</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>博弈</p>
-                            <img src="image\Card\Get_Information.png" alt="">
-                        </td>
-                        <td>
+                    <img src="image\Card\Change_All_Card.png" alt="">
+                    <div class="card_introduce">
+                        <p>權衡</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>真偽莫辨</p>
-                            <img src="image\Card\Everyone_Get_Information.png" alt="">
-                        </td>
-                        <td>
+                    <img src="image\Card\Get_Information.png" alt="">
+                    <div class="card_introduce">
+                        <p>博弈</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="feature_card">
 
-                        </td>
-                    </tr>
+                    <img src="image\Card\Everyone_Get_Information.png" alt="">
+                    <div class="card_introduce">
+                        <p>真偽莫辨</p>
+                        <p></p>
+                    </div>
 
-                </table>
+                </div>
             </div>
         </div>
     </div>
