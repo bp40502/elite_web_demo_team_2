@@ -26,20 +26,23 @@
             background-color: coral;
             text-align: center;
         }
-        #role_bar::-webkit-scrollbar{
+        
+        #role_bar::-webkit-scrollbar {
             width: 5px;
             height: 8px;
             background-color: #aaa;
         }
+        
         #role_bar::-webkit-scrollbar-thumb {
             background: rgb(51, 50, 50);
         }
+        
         #role_detail {
             height: 100vh;
             width: 400px;
             background-color: cornflowerblue;
             display: flex;
-            flex-direction:column;
+            flex-direction: column;
             align-items: center;
             margin-left: 20px;
         }
@@ -82,11 +85,11 @@
 <body>
     <!-- 角色縮圖 -->
     <div>
-        <!-- <div id="search">
+        <div id="search">
             <span>角色搜尋</span>
-            <input type="text" value="">
-            <button>搜尋</button>
-        </div> -->
+            <input id="search_input" type="text" value="">
+            <button id="btn1">搜尋</button>
+        </div>
         <div id="role_bar">
             <p style="margin: 5px;"><span style="color: red; background-color: white; font-size: 2rem;">角色列表</span></p>
             <input type="image" src="image\Character\Character_1.png" alt="" onclick="image(1)" ;>
@@ -138,15 +141,36 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
     <script type="text/javascript">
         function image(img) {
             document.getElementById('pho').src = "image/Character/Character_" + img + ".png"
         }
-        image(img);
-    </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
+
+
+        let role_name = ["致命香水", "老金"]
+
+        $("#search_input").keydown(function(event) {
+            if (event.keyCode == 13) {
+                search_and_show()
+            };
+        });
+
+        var btn = document.getElementById("btn1")
+        btn.onclick = search_and_show()
+
+        function search_and_show() {
+            let name = $("#search_input").val()
+            photo_index = role_name.indexOf(name)
+            if (photo_index != -1) {
+                document.getElementById('pho').src = "image/Character/Character_" + (photo_index + 1) + ".png"
+            }
+        }
+    </script>
 </body>
 
 </html>
