@@ -11,9 +11,11 @@
             background-image: url("image/background.png");
             text-align: center;
         }
+        
         div {
             background-color: white;
         }
+        
         a:link {
             color: blue;
             text-decoration: none;
@@ -25,7 +27,15 @@
             /* 設定已經瀏覽過的連結樣式 */
         }
         
-        
+        #btn1 {
+            color: blue;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
     </style>
 </head>
 
@@ -43,6 +53,9 @@
         <a href="https://youtu.be/aPTZ1zqSqdM" target="_blank">點我看電影預告</a>
 
     </div>
+
+    <input type ="button" onclick="history.back()" value="上一頁" id="btn1"></input>
+
 </body>
 
 </html>
