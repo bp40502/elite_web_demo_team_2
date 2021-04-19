@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>風聲</title>
+
+    <style type="text/css">
+        body {
+            /* background-color: rgb(58, 197, 104); */
+            background-image: url(image/background.png);
+            background-position: center;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            font-family: DFKai-sb;
+        }
+        
+        header {
+            display: flex;
+            justify-content: center;
+        }
+        
+        header h1 {
+            background-color: white;
+            border: double rgb(238, 98, 98);
+            border-radius: 20px;
+            border-width: 15px;
+            margin: 20px;
+            padding: 10px;
+            font-size: 3rem;
+            width: 70vw;
+            max-width: 750px;
+            text-align: center;
+        }
+        
+        #main {
+            /* background-color: white; */
+            height: 600px;
+            /* border-radius: 30px; */
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+        
+        aside {
+            font-size: 2rem;
+            width: 300px;
+            height: 660px;
+            margin-right: 20px;
+            padding-top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        #aside_ul {
+            border-radius: 30px;
+            line-height: 60px;
+            height: 360px;
+            background-color: white;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        #aside_ul ul {
+            list-style-type: none;
+            margin-left: -50px;
+        }
+        
+        #aside_vedio {
+            border-radius: 30px;
+            background-color: white;
+            height: 300px;
+            text-align: center;
+        }
+        
+        aside a:link {
+            color: black;
+            text-decoration: none;
+            /* 設定還沒瀏覽過的連結樣式 */
+        }
+        
+        aside a:visited {
+            color: black;
+            /* 設定已經瀏覽過的連結樣式 */
+        }
+        
+        aside a:hover {
+            color: red;
+            /* 設定滑鼠移到連結上的樣式 */
+        }
+        
+        aside a:active {
+            color: blue;
+            /* 設定正在被點選的連結樣式 */
+        }
+        
+        #content {
+            flex-direction: column;
+            /* flex-grow: 4; */
+            justify-content: space-between;
+            height: 620px;
+            width: 750px;
+        }
+        
+        #photo_block {
+            background-color: white;
+            border-radius: 30px;
+            /* background-color: yellow; */
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #photo_block img {
+            width: 250px;
+        }
+        
+        #another_table_game {
+            background-color: white;
+            border-radius: 30px;
+            margin-top: 20px;
+            height: 250px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        #another_table_game>p {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        
+        #another_table_game>div {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .table_game {
+            text-align: center;
+            margin: 20px 10px;
+            background-color: rgb(203, 169, 248);
+            border-radius: 30px;
+        }
+        
+        #another_table_game img {
+            width: 200px;
+            height: 130px;
+            border-radius: 30px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>風聲</h1>
+    </header>
+    <div id="main">
+        <aside>
+            <div id="aside_ul">
+                <ul>
+                    <li><a href="story.html">故事背景</a></li>
+                    <li><a href="rule.html">規則介紹</a></li>
+                    <li><a href="character.html">角色介紹</a></li>
+                    <li><a href="card.html">卡片介紹</a></li>
+                </ul>
+            </div>
+            <div id="aside_vedio">
+                <p>影片介紹</p>
+                <iframe style="border-radius: 20px;" width="270px" src="https://www.youtube.com/embed/IgUY83lx5n0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </aside>
+        <div id="content">
+            <div id="photo_block">
+                <img src="image/The_Message1.jpg">
+                <img src="image/The_Message2.jpg">
+            </div>
+            <div id="another_table_game">
+                <p>其他同類型桌遊</p>
+                <div>
+                    <div class="table_game">
+                        <p>三國殺</p>
+                        <a href="#"><img src="image/WTK.jpg"></a>
+                    </div>
+                    <div class="table_game">
+                        <p>盜夢都市</p>
+                        <a href="#"><img src="image/Inception.jpg"></a>
+                    </div>
+                    <div class="table_game">
+                        <p>BANG！砰</p>
+                        <a href="#"><img src="image/BANG.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
