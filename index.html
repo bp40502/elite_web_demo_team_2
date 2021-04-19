@@ -44,7 +44,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            /* width: 1200px; */
+            width: 1200px;
         }
         
         aside {
@@ -53,8 +53,12 @@
         }
         
         article {
-            background-color: purple;
+            background-color: white;
             flex-grow: 5;
+        }
+
+        .table th{
+            /* width: 300px; */
         }
         
         footer {
@@ -99,10 +103,21 @@
 
         <div id="main">
             <aside>
-                <p>123</p>
+                <p>加入會員</p>
+                <p>馬上預約</p>
+                <p>線上訂購</p>
             </aside>
             <article>
-                <p>123</p>
+                <h1>最新消息</h1>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th scope="row">2030-5-30</th>
+                            <td>這裡是內容</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
             </article>
         </div>
     </div>
