@@ -10,7 +10,7 @@
     <style type="text/css">
         body {
             /* background-color: rgb(58, 197, 104); */
-            background-image: url(image/background.png);
+            background-image: url(../image/background.png);
             background-position: center;
             margin: 0;
             height: 100vh;
@@ -24,6 +24,7 @@
         header {
             display: flex;
             justify-content: center;
+            align-items: center;
         }
         
         header h1 {
@@ -155,12 +156,24 @@
             border-radius: 30px;
             margin: 0 10px;
         }
+        
+        #btn1 {
+            color: blue;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            font-size: 2.5rem;
+            /* position: fixed;
+            right: 10%;
+            bottom: 10%; */
+        }
     </style>
 </head>
 
 <body>
     <header>
         <h1>風聲</h1>
+        <input type="button" onclick="history.back()" value="揪" id="btn1"></input>
     </header>
     <div id="main">
         <aside>
@@ -180,28 +193,27 @@
         </aside>
         <div id="content">
             <div id="photo_block">
-                <img src="image/The_Message1.jpg">
-                <img src="image/The_Message2.jpg">
+                <img src="../image/The_Message1.jpg">
+                <img src="../image/The_Message2.jpg">
             </div>
             <div id="another_table_game">
                 <p>其他同類型桌遊</p>
                 <div>
                     <div class="table_game">
                         <p>三國殺</p>
-                        <a href="#"><img src="image/WTK.jpg"></a>
+                        <a href="#"><img src="../image/WTK.jpg"></a>
                     </div>
                     <div class="table_game">
                         <p>盜夢都市</p>
-                        <a href="#"><img src="image/Inception.jpg"></a>
+                        <a href="#"><img src="../image/Inception.jpg"></a>
                     </div>
                     <div class="table_game">
                         <p>BANG！砰</p>
-                        <a href="#"><img src="image/BANG.jpg"></a>
+                        <a href="#"><img src="../image/BANG.jpg"></a>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </body>
 
