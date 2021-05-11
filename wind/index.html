@@ -173,7 +173,7 @@
 <body>
     <header>
         <h1>風聲</h1>
-        <form action="/register",method = "GET">
+        <form action=" {{url_for('register') }}",method = "GET">
             <input type="submit" value="揪" id="btn1">
         </form>
         
@@ -182,10 +182,10 @@
         <aside>
             <div id="aside_ul">
                 <ul>
-                    <li><a href="story.html">故事背景</a></li>
-                    <li><a href="rule.html">規則介紹</a></li>
-                    <li><a href="character.html">角色介紹</a></li>
-                    <li><a href="card.html">卡片介紹</a></li>
+                    <li><a href="{{ url_for('story') }}">故事背景</a></li>
+                    <li><a href="{{ url_for('rule') }}">規則介紹</a></li>
+                    <li><a href="{{ url_for('character') }}">角色介紹</a></li>
+                    <li><a href="{{ url_for('card') }}">卡片介紹</a></li>
                 </ul>
             </div>
             <div id="aside_vedio">

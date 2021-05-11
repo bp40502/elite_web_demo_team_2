@@ -24,6 +24,22 @@ bootstrap = Bootstrap(app)
 def index():
     return render_template('index.html')
 
+@app.route('/story')
+def story():
+    return render_template('story.html')
+
+@app.route('/rule')
+def rule():
+    return render_template('rule.html')
+
+@app.route('/character')
+def character():
+    return render_template('character.html')
+
+@app.route('/card')
+def card():
+    return render_template('card.html')
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():   
    form = FormRegister()
@@ -31,7 +47,9 @@ def register():
        user = UserRegister(
            username = form.username.data,
            phone = form.phone.data,
-           sex = form.sex.data
+           sex = form.sex.data,
+           time = form.time.data,
+           area = form.area.data
        )
        db.session.add(user)
        db.session.commit()

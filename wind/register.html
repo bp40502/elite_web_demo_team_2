@@ -1,8 +1,51 @@
 {% from 'bootstrap/form.html' import render_form %}
 
-{% block content %}
-<div class="container">
-   <h1> 報名 </h1>
-   	{{ render_form(form) }}
-</div>
-{% endblock content%}
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>揪團GO</title>
+    <style type="text/css">
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            background-image: url(static/background.png);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #box_outside {
+            background-color: white;
+            width: 500px;
+            height: 360px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #box_inside {
+            margin: 0;
+        }
+
+        h1{
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box_outside">
+        <div id="box_inside">
+            <h1> 報名 </h1>
+            {{ render_form(form) }}
+        </div>
+    </div>
+</body>
+
+</html>
